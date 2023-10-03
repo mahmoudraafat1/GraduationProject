@@ -24,6 +24,7 @@ server --> Express for NodeJs
 
 <hr>
 
-## Author
+## Author(s)
 **Mostafa Hassan**
+</br>
 **Mahmoud Raafat**
