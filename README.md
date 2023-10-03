@@ -1,10 +1,29 @@
-# GraduationProject
-
-M & M For Real Estate
-
+<h1 align="center">M & M For Real Estate</h1>
+<p align="center">
+  
 Blockchain-Based Real Estate Transactions/Ownership
+
+</p>
+
+<h1 align="center">Project Description </h1>
 
 Create a blockchain platform for facilitating transparent and efficient real estate
 transactions. Implement smart contracts to automate the execution of purchase
 agreements, property transfers, and escrow processes. Enable stakeholders to track
 and verify property ownership, titles, and transaction history.
+
+<hr>
+
+<h1 align="center">🚀 Folder Structure</h1>
+
+clinet --> Vite(React JS) for the front-end
+
+backend --> HardHat for the block chain and solidity(Smart Contract)
+
+server --> Express for NodeJs
+
+<hr>
+
+## Author
+**Mostafa Hassan**
+**Mahmoud Raafat**
