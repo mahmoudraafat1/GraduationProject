@@ -1,4 +1,4 @@
-<h1 align="center">M & M For Real Estate</h1>
+<h1 align="center">My Real Estate</h1>
 <p align="center">
   
 Blockchain-Based Real Estate Transactions/Ownership
@@ -6,6 +6,8 @@ Blockchain-Based Real Estate Transactions/Ownership
 </p>
 
 <h1 align="center">Project Description </h1>
+
+The purpose of this project is to 
 
 Create a blockchain platform for facilitating transparent and efficient real estate
 transactions. Implement smart contracts to automate the execution of purchase
