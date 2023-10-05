@@ -27,7 +27,10 @@ server --> Express for NodeJs
 
 clinet --> cd client --> npm run dev
 
-backend --> cd backend --> npx hardhat compile --> npx hardhat test --> npx hardhat run --network <your-network> scripts/deploy.js
+backend --> cd backend -->
+1) For Compiling : npx hardhat compile
+2) For Compiling : --> npx hardhat test -->
+3) For Compiling : npx hardhat run --network <your-network> scripts/deploy.js
 
 server --> cd server --> ??
 
