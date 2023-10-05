@@ -23,6 +23,15 @@ backend --> HardHat for the block chain and solidity(Smart Contract)
 server --> Express for NodeJs
 
 <hr>
+<h1 align="center">🚀 How to run the project</h1>
+
+clinet --> cd client --> npm run dev
+
+backend --> cd backend --> npx hardhat compile --> npx hardhat test --> npx hardhat run --network <your-network> scripts/deploy.js
+
+server --> cd server --> ??
+
+<hr>
 
 ## Author(s)
 **Mostafa Hassan**
