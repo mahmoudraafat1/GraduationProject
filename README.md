@@ -37,7 +37,7 @@ server --> Express for NodeJs
 <hr>
 <h1 align="center">🚀 How to run the project</h1>
 
-clinet --> cd client --> npm run dev
+client --> cd client --> npm run dev
 
 backend --> cd backend -->
 1) For Compiling : npx hardhat compile
