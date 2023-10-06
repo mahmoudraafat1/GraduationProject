@@ -85,12 +85,28 @@ server --> Express for NodeJs
 <hr>
 <h1 align="center">🚀 How to run the project</h1>
 
+<p align="left">For the client side</p>
+
+1) Open terminal
+2) write cd client
+3) write npm run dev
+4) client side has been initialized  ✔ ✔ 
+
 client --> cd client --> npm run dev
 
+------------------------------------
+
+<p align="left">For the backend side</p>
+
 backend --> cd backend -->
+
 1) For Compiling : npx hardhat compile
 2) For Testing   : npx hardhat test 
-3) For Deploying : npx hardhat run --network <your-network> scripts/deploy.js
+3) For Deploying : npx hardhat run --network <your-network> scripts/deploy.js ✔ ✔ 
+
+------------------------------------
+
+<p align="left">For the server side</p>
 
 server --> cd server --> ??
 
