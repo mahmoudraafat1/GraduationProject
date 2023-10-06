@@ -1,6 +1,12 @@
 <h1 align="center">My Real Estate</h1>
 <p align="center">My Real Estate - Blockchain-powered Real Estate Platform</p>
+<p align="center">
+  
 
+![blockchain](https://github.com/mahmoudraafat1/GraduationProject/assets/81190585/dc5f5e77-9da6-49a0-9d06-257610de3638)
+
+
+</p>
 <h1 align="center">Project Description </h1>
 
 My Real Estate is an innovative real estate project that aims to revolutionize the industry by leveraging the power of blockchain technology. The project focuses on developing a user-friendly web application that enables seamless buying and selling of real estate properties while ensuring transparency, security, and immutability of transactions. This project will be implemented in two or three phases, with the initial phase involving the integration of blockchain technology for transactional purposes, and the subsequent phase incorporating Non-Fungible Tokens (NFTs) to establish property ownership.
