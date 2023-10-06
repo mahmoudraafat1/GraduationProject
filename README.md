@@ -36,9 +36,52 @@ Building upon the success of Phase 1, the second phase of the project will intro
 
 clinet --> Vite(React JS) for the front-end
 
+```
+
+└── client/
+    ├── src/
+    │   ├── assets/
+    |   ├── context/
+    |            └── TransactionContext.jsx
+    |   ├── hooks/
+    |   ├── utlis/
+    |            └── adress.js
+    |            └── constant.js
+    |   ├── components/
+    |            └── Client.jsx
+    |            └── Contact.jsx
+    |            └── Footer.jsx
+    |            └── Home.jsx
+    |            └── index.js
+    |            └── Loader.jsx
+    |            └── Navbar.jsx
+    |            └── Services.jsx
+    |            └── Transactions.jsx
+    |            └── Welcome.jsx
+    └── App.css
+    └── App.jsx
+    └── index.css
+    └── main.jsx
+
+```
+
 backend --> HardHat for the block chain and solidity(Smart Contract)
 
+```
+
+└── backend/
+    │   ├── contracts/
+    |            └── Lock.sol
+    |   ├── scripts/
+    |            └── deploy.js
+    |   ├── test/
+    |            └── Lock.js
+    └── hardhat.config.js
+
+```
+
 server --> Express for NodeJs
+
 
 <hr>
 <h1 align="center">🚀 How to run the project</h1>
