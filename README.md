@@ -99,7 +99,7 @@ client --> cd client --> npm run dev
 
 <p align="left">For the backend side</p>
 
-backend --> cd backend --> npm install
+backend --> cd backend --> npm install --force
 
 1) For Compiling : npx hardhat compile
 2) For Testing   : npx hardhat test 
