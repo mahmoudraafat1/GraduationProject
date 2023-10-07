@@ -89,8 +89,9 @@ server --> Express for NodeJs
 
 1) Open terminal
 2) write cd client
-3) write npm run dev
-4) client side has been initialized  ✔ ✔ 
+3) npm install
+4) write npm run dev
+5) client side has been initialized  ✔ ✔ 
 
 client --> cd client --> npm run dev
 
@@ -98,7 +99,7 @@ client --> cd client --> npm run dev
 
 <p align="left">For the backend side</p>
 
-backend --> cd backend -->
+backend --> cd backend --> npm install
 
 1) For Compiling : npx hardhat compile
 2) For Testing   : npx hardhat test 
