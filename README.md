@@ -47,8 +47,10 @@ clinet --> Vite(React JS) for the front-end
     |            └── adress.js
     |            └── constant.js
     |   ├── components/
+    |            └── About.jsx
     |            └── Client.jsx
     |            └── Contact.jsx
+    |            └── Features.jsx
     |            └── Footer.jsx
     |            └── Home.jsx
     |            └── index.js
@@ -81,6 +83,14 @@ backend --> HardHat for the block chain and solidity(Smart Contract)
 
 server --> Express for NodeJs
 
+```
+
+└── server/
+    └── index.js
+    └── .env
+
+
+```
 
 <hr>
 <h1 align="center">🚀 How to run the project</h1>
@@ -109,7 +119,15 @@ backend --> cd backend --> npm install --force
 
 <p align="left">For the server side</p>
 
-server --> cd server --> ??
+server --> cd server --> npm start
+
+1) Open terminal
+2) write cd server
+3) npm install
+4) write npm start
+5) server side has been initialized  ✔ ✔ 
+
+server --> cd server --> npm start
 
 <hr>
 
