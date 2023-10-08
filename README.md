@@ -47,8 +47,10 @@ clinet --> Vite(React JS) for the front-end
     |            └── adress.js
     |            └── constant.js
     |   ├── components/
+    |            └── About.jsx
     |            └── Client.jsx
     |            └── Contact.jsx
+    |            └── Features.jsx
     |            └── Footer.jsx
     |            └── Home.jsx
     |            └── index.js
@@ -81,6 +83,14 @@ backend --> HardHat for the block chain and solidity(Smart Contract)
 
 server --> Express for NodeJs
 
+```
+
+└── server/
+    └── index.js
+    └── .env
+
+
+```
 
 <hr>
 <h1 align="center">🚀 How to run the project</h1>
@@ -89,8 +99,9 @@ server --> Express for NodeJs
 
 1) Open terminal
 2) write cd client
-3) write npm run dev
-4) client side has been initialized  ✔ ✔ 
+3) npm install
+4) write npm run dev
+5) client side has been initialized  ✔ ✔ 
 
 client --> cd client --> npm run dev
 
@@ -98,17 +109,25 @@ client --> cd client --> npm run dev
 
 <p align="left">For the backend side</p>
 
-backend --> cd backend -->
+backend --> cd backend --> npm install --force
 
 1) For Compiling : npx hardhat compile
-2) For Testing   : npx hardhat test 
-3) For Deploying : npx hardhat run --network <your-network> scripts/deploy.js ✔ ✔ 
+2) For Deploying : npx hardhat run --network <your-network> scripts/deploy.js ✔ ✔ 
+3) For Testing   : npx hardhat test 
 
 ------------------------------------
 
 <p align="left">For the server side</p>
 
-server --> cd server --> ??
+server --> cd server --> npm start
+
+1) Open terminal
+2) write cd server
+3) npm install
+4) write npm start
+5) server side has been initialized  ✔ ✔ 
+
+server --> cd server --> npm start
 
 <hr>
 
