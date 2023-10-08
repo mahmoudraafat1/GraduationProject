@@ -119,8 +119,6 @@ backend --> cd backend --> npm install --force
 
 <p align="left">For the server side</p>
 
-server --> cd server --> npm start
-
 1) Open terminal
 2) write cd server
 3) npm install
