@@ -129,6 +129,13 @@ server --> cd server --> npm start
 
 <hr>
 
+<h1 align="center">🚀 Features</h1>
+
+1) MongoDB
+2) ChatBot
+
+<hr>
+
 ## Author(s)
 **Mostafa Hassan**
 </br>
