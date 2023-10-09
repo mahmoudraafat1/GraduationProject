@@ -131,7 +131,7 @@ server --> cd server --> npm start
 
 <h1 align="center">🚀 Features</h1>
 
-1) MongoDB for Login and Sign up
+1) MongoDB for Log in and Sign up
 2) ChatBot using AI to recommend property for the user based on his/her answers
 
 <hr>
