@@ -1,5 +1,5 @@
 require("@nomicfoundation/hardhat-toolbox");
-
+require('dotenv').config();
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   
@@ -8,8 +8,8 @@ module.exports = {
     hardhat: {
     },
     sepolia: {
-      url: Alchemy_HTTP_KEY,
-      accounts: [MetaMask_Wallet_Private_Key],
+      url: process.env.ALCHEMY_HTTP_KEY,
+      accounts: [process.env.METAMASK_WALLET_PRIVATE_KEY],
     }
   },
   solidity: {
