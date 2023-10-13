@@ -31,6 +31,7 @@ Building upon the success of Phase 1, the second phase of the project will intro
 
 <hr>
 
+
 <h1 align="center">🚀 Folder Structure</h1>
 
 clinet --> Vite(React JS) for the front-end
