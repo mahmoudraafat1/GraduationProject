@@ -16,7 +16,10 @@
       transform: rotate(360deg);
     }
   }
-  
+
+:root{
+  background-color: black;
+} 
 * html {
   padding: 0;
   margin: 0;
