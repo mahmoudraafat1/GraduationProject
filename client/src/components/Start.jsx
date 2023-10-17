@@ -15,13 +15,13 @@ const Start = () => {
         <div className="flex flex-col md:flex-row items-center">
           <button
             type="button"
-            className="flex justify-center items-center my-5 border-2 border-white bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd] px-8 md:px-12 lg:px-16 mx-2 md:mx-4 transition-colors duration-500 transform-gpu hover:scale-105"
+            className="flex justify-center items-center my-5 border-2 border-white bg-black p-3 rounded-full cursor-pointer hover:bg-[#2546bd] px-8 md:px-12 lg:px-16 mx-2 md:mx-4 transition-colors duration-500 transform-gpu hover:scale-105"
           >
             <p className="text-white text-base md:text-lg lg:text-xl font-semibold">Log In</p>
           </button>
           <button
             type="button"
-            className="flex justify-center items-center my-5 border-2 border-white bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd] px-8 md:px-12 lg:px-16 mx-2 md:mx-4 transition-colors duration-500 transform-gpu hover:scale-105"
+            className="flex justify-center items-center my-5 border-2 border-white bg-black p-3 rounded-full cursor-pointer hover:bg-[#2546bd] px-8 md:px-12 lg:px-16 mx-2 md:mx-4 transition-colors duration-500 transform-gpu hover:scale-105"
           >
             <p className="text-white text-base md:text-lg lg:text-xl font-semibold">Sign Up</p>
           </button>

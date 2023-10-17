@@ -6,7 +6,7 @@ import {Start,Client ,Contact,Footer,Navbarr,About,Services} from '../components
 
 const App = () => (
   <div>
-  <Navbarr/>
+   <Navbarr/>
    <Start/>
    <About/>
    <Services/>
