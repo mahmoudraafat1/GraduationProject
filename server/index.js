@@ -1,44 +1,21 @@
-const express = require("express");
-const cors = require("cors");
-const mongoose = require("mongoose");
-
 require("dotenv").config();
+const express = require("express");
+const app = express();
+const cors = require("cors");
+const connection = require("./db");
+const userRoutes = require("./routes/users");
+const authRoutes = require("./routes/auth");
 
-console.log(process.env.NODE_ENV)
+// database connection
+connection();
 
-const app = express()
-
-// app config
-app.use(cors());
+// middlewares
 app.use(express.json());
+app.use(cors());
 
-// port and DB config
-const DATABASE_CONNECTION = process.env.DATABASE_URL;
+// routes
+app.use("/api/users", userRoutes);
+app.use("/api/auth", authRoutes);
 
-const PORT = process.env.PORT || 8000;
-  
-app.get('/', (req, res) => {
-  res.send('Welcome server side is now open!')
-})
-
-app.listen(PORT, () => {
-  console.log(`The Port is : ${PORT}`)
-  console.log(`My Real Estate app listening on port ${PORT}`)
-})
-
-mongoose
-    .connect(DATABASE_CONNECTION, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        
-    })
-    .then(() =>
-        app.listen(PORT, () =>
-            console.log(`Server is running at : http://localhost:${PORT}`),
-        )
-        
-    )
-    .catch((error) => {
-        console.log(error);
-      });
-    
+const port = process.env.PORT || 8080;
+app.listen(port, console.log(`Listening on port ${port}...`));
