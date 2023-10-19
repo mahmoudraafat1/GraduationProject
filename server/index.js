@@ -1,21 +1,26 @@
-require("dotenv").config();
 const express = require("express");
-const app = express();
+const mongoose = require("mongoose");
+const dotenv = require("dotenv").config();
 const cors = require("cors");
-const connection = require("./db");
-const userRoutes = require("./routes/users");
-const authRoutes = require("./routes/auth");
+const app = express();
 
-// database connection
-connection();
+const authController = require('./controllers/authController')
+const userController = require("./controllers/userController");
+
+// db connecting
+mongoose.set('strictQuery', false)
+mongoose.connect(process.env.MONGO_URL);
 
 // middlewares
-app.use(express.json());
 app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use('/images', express.static('public/images'))
 
-// routes
-app.use("/api/users", userRoutes);
-app.use("/api/auth", authRoutes);
+app.use("/auth", authController);
+app.use('/user', userController)
 
-const port = process.env.PORT || 8080;
-app.listen(port, console.log(`Listening on port ${port}...`));
+
+// starting server
+const port = process.env.PORT || 5000;
+app.listen(port, () => console.log("Server has been started"));
