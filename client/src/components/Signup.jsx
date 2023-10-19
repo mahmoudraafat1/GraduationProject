@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { signup } from "./SignupService";
 
 const Signup = () => {
   const [name, setName] = useState("");
@@ -7,13 +8,17 @@ const Signup = () => {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // TODO: Send sign up credentials to backend and create user account
+    try {
+      const response = await signup(name, email, password);
 
-    // If sign up is successful, redirect user to home page
-    navigate("/");
+      // If signup is successful, redirect user to home page
+      navigate("/");
+    } catch (error) {
+      // Handle error
+    }
   };
 
   return (
