@@ -1,18 +1,23 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { login } from "./LoginService";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // TODO: Send login credentials to backend and authenticate user
+    try {
+      const response = await login(email, password);
 
-    // If login is successful, redirect user to home page
-    navigate("/");
+      // If login is successful, redirect user to home page
+      navigate("/");
+    } catch (error) {
+      // Handle error
+    }
   };
 
   return (
