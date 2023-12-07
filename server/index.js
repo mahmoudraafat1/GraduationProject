@@ -1,26 +1,30 @@
+require("dotenv").config();
 const express = require("express");
-const mongoose = require("mongoose");
-const dotenv = require("dotenv").config();
-const cors = require("cors");
 const app = express();
-
-const authController = require('./controllers/authController')
-const userController = require("./controllers/userController");
-
-// db connecting
-mongoose.set('strictQuery', false)
-mongoose.connect(process.env.MONGO_URL);
+const cors = require("cors");
+const connection = require("./db");
+const userRoutes = require("./routes/users");
+const authRoutes = require("./routes/auth");
+const propertyRoutes = require("./routes/property");
+// database connection
+connection();
 
 // middlewares
-app.use(cors());
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use('/images', express.static('public/images'))
+app.use(cors());
 
-app.use("/auth", authController);
-app.use('/user', userController)
+// routes
+app.use("/api/users", userRoutes);
+app.use("/api/auth", authRoutes);
+app.use("/api/property", propertyRoutes);
 
+app.get('/', (req, res) => {
+    res.send('Server side for the My Real Estate BlockChain is now runinng....');
+  });
 
-// starting server
-const port = process.env.PORT || 5000;
-app.listen(port, () => console.log("Server has been started"));
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+    console.log('Connecting to server......');
+    console.log(`Server now listening on port ${port}`);
+    console.log(`Now you can run localhost/${port} and see a message`);
+  });
