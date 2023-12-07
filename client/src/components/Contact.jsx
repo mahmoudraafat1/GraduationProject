@@ -37,7 +37,7 @@ const Contact = () => {
               </li>
               <li className="flex items-center mb-4">
                 <FaEnvelope className="h-6 w-6 mr-2 text-yellow-300" />
-                blockchain@gmail.com
+                myrealestate@gmail.com
               </li>
             </ul>
           </div>

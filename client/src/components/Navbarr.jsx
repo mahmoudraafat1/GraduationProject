@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 
 import '../index.css'
 import { FaHome, FaUser, FaProjectDiagram} from 'react-icons/fa';
-const Navbar = () => {
+const Navbarr = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const menuTransitionDuration = 500;
@@ -171,4 +171,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbarr;

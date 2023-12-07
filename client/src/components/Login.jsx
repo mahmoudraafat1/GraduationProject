@@ -1,49 +1,77 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { login } from "./LoginService";
+import { useState } from "react";
+import axios from "axios";
+import { Link, useNavigate } from "react-router-dom";
+import styles from "./styles.module.css";
 
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const navigate = useNavigate();
+	const [data, setData] = useState({ email: "", password: "" });
+	const [error, setError] = useState("");
+	const navigate = useNavigate();
+	const handleChange = ({ currentTarget: input }) => {
+		setData({ ...data, [input.name]: input.value });
+	};
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		try {
+			const url = "http://localhost:8000/api/auth/login";
+			const { data: res } = await axios.post(url, data);
+			window.alert("Login Successfully");
+			navigate("/main");
+			//window.location.reload();
+			localStorage.setItem("token", res.data);
+		} catch (error) {
+			if (
+				error.response &&
+				error.response.status >= 400 &&
+				error.response.status <= 500
+			) {
+				setError(error.response.data.message);
+			}
+		}
+	};
 
-    try {
-      const response = await login(email, password);
-
-      // If login is successful, redirect user to home page
-      navigate("/");
-    } catch (error) {
-      // Handle error
-    }
-  };
-
-  return (
-    <div className="login-form">
-      <h1 className="text-4xl font-bold">Log In</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
-          className="w-full p-3 border border-gray-200 rounded-md mt-5"
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(event) => setPassword(event.target.value)}
-          className="w-full p-3 border border-gray-200 rounded-md mt-5"
-        />
-        <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-md mt-5">
-          Log In
-        </button>
-      </form>
-    </div>
-  );
+	return (
+		<div className={styles.login_container}>
+			<div className={styles.login_form_container}>
+				<div className={styles.left}>
+					<form className={styles.form_container} onSubmit={handleSubmit}>
+						<h1>Login to Your Account</h1>
+						<input
+							type="email"
+							placeholder="Email"
+							name="email"
+							onChange={handleChange}
+							value={data.email}
+							required
+							className={styles.input}
+						/>
+						<input
+							type="password"
+							placeholder="Password"
+							name="password"
+							onChange={handleChange}
+							value={data.password}
+							required
+							className={styles.input}
+						/>
+						{error && <div className={styles.error_msg}>{error}</div>}
+						<button type="submit" className={styles.green_btn}>
+							Log In
+						</button>
+					</form>
+				</div>
+				<div className={styles.right}>
+					<h1>New Here ?</h1>
+					<Link to="/signup">
+						<button type="button" className={styles.white_btn}>
+							Sign Up
+						</button>
+					</Link>
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default Login;

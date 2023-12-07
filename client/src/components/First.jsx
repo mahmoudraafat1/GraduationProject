@@ -4,7 +4,7 @@
 import {Start,Client ,Contact,Footer,Navbarr,About,Services} from '../components';
 
 
-const App = () => (
+const First = () => (
   <div>
    <Navbarr/>
    <Start/>
@@ -16,4 +16,4 @@ const App = () => (
   </div>
 );
 
-export default App;
+export default First;

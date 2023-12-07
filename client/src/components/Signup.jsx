@@ -1,57 +1,100 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { signup } from "./SignupService";
+import { useState } from "react";
+import axios from "axios";
+import { Link, useNavigate } from "react-router-dom";
+import styles from "./styless.module.css";
 
 const Signup = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const navigate = useNavigate();
+	const [data, setData] = useState({
+		firstName: "",
+		lastName: "",
+		email: "",
+		password: "",
+	});
+	const [error, setError] = useState("");
+	const navigate = useNavigate();
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+	const handleChange = ({ currentTarget: input }) => {
+		setData({ ...data, [input.name]: input.value });
+	};
 
-    try {
-      const response = await signup(name, email, password);
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		try {
+			const url = "http://localhost:8000/api/users/signup";
+			const { data: res } = await axios.post(url, data);
+			navigate("/login");
+			window.alert("Sign Up Successfully");
+			console.log(res.message);
+		} catch (error) {
+			if (
+				error.response &&
+				error.response.status >= 400 &&
+				error.response.status <= 500
+			) {
+				setError(error.response.data.message);
+			}
+		}
+	};
 
-      // If signup is successful, redirect user to home page
-      navigate("/");
-    } catch (error) {
-      // Handle error
-    }
-  };
-
-  return (
-    <div className="signup-form">
-      <h1 className="text-4xl font-bold">Sign Up</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Name"
-          value={name}
-          onChange={(event) => setName(event.target.value)}
-          className="w-full p-3 border border-gray-200 rounded-md mt-5"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
-          className="w-full p-3 border border-gray-200 rounded-md mt-5"
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(event) => setPassword(event.target.value)}
-          className="w-full p-3 border border-gray-200 rounded-md mt-5"
-        />
-        <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-md mt-5">
-          Sign Up
-        </button>
-      </form>
-    </div>
-  );
+	return (
+		<div className={styles.signup_container}>
+			<div className={styles.signup_form_container}>
+				<div className={styles.left}>
+					<h1>Welcome Back</h1>
+					<Link to="/login">
+						<button type="button" className={styles.white_btn}>
+							Log in
+						</button>
+					</Link>
+				</div>
+				<div className={styles.right}>
+					<form className={styles.form_container} onSubmit={handleSubmit}>
+						<h1>Create Account</h1>
+						<input
+							type="text"
+							placeholder="First Name"
+							name="firstName"
+							onChange={handleChange}
+							value={data.firstName}
+							required
+							className={styles.input}
+						/>
+						<input
+							type="text"
+							placeholder="Last Name"
+							name="lastName"
+							onChange={handleChange}
+							value={data.lastName}
+							required
+							className={styles.input}
+						/>
+						<input
+							type="email"
+							placeholder="Email"
+							name="email"
+							onChange={handleChange}
+							value={data.email}
+							required
+							className={styles.input}
+						/>
+						<input
+							type="password"
+							placeholder="Password"
+							name="password"
+							onChange={handleChange}
+							value={data.password}
+							required
+							className={styles.input}
+						/>
+						{error && <div className={styles.error_msg}>{error}</div>}
+						<button type="submit" className={styles.green_btn}>
+							Sign Up
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default Signup;
