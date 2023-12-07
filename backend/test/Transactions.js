@@ -2,30 +2,48 @@ const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
 describe("Transactions", function () {
-  let transactions;
+  let Transactions;
 
-  beforeEach(async function () {
-    const Transactions = await ethers.getContractFactory("Transactions");
-    transactions = await Transactions.deploy();
-    await transactions.deployed();
+  before(async function () {
+    Transactions = await ethers.getContractFactory("Transactions");
   });
 
-  it("Should add a new transaction to the blockchain", async function () {
-    const receiver = "0x1234567890123456789012345678901234567890"; // Replace with the desired receiver address
-    const amount = 100;
-    const message = "Test transaction";
-    const keyword = "Test";
+  it("should add a transaction to the blockchain", async function () {
+    const transactions = await Transactions.deploy();
+    await transactions.deployed();
 
-    await transactions.addToBlockchain(receiver, amount, message, keyword);
+    const receiver = "0x1234567890123456789012345678901234567890";
+    const propertyPrice = 100000;
+    const propertyName = "Example Property";
+
+    await transactions.addToBlockchain(receiver, propertyPrice, propertyName);
 
     const allTransactions = await transactions.getAllTransactions();
-    const transactionCount = await transactions.getTransactionCount();
+    const transaction = allTransactions[0];
 
-    expect(allTransactions.length).to.equal(transactionCount);
-    expect(allTransactions[0].sender).to.equal(await ethers.provider.getSigner().getAddress());
-    expect(allTransactions[0].receiver).to.equal(receiver);
-    expect(allTransactions[0].amount).to.equal(amount);
-    expect(allTransactions[0].message).to.equal(message);
-    expect(allTransactions[0].keyword).to.equal(keyword);
+    assert.equal(transaction.sender, await ethers.provider.getSigner(0).getAddress());
+    assert.equal(transaction.receiver, receiver);
+    assert.equal(transaction.propertyprice, propertyPrice);
+    assert.equal(transaction.propertyname, propertyName);
+  });
+
+  it("should return the transaction count", async function () {
+    const transactions = await Transactions.deploy();
+    await transactions.deployed();
+
+    const receiver1 = "0x1234567890123456789012345678901234567890";
+    const propertyPrice1 = 100000;
+    const propertyName1 = "Property 1";
+
+    const receiver2 = "0xabcdefabcdefabcdefabcdefabcdefabcdefabcdef";
+    const propertyPrice2 = 200000;
+    const propertyName2 = "Property 2";
+
+    await transactions.addToBlockchain(receiver1, propertyPrice1, propertyName1);
+    await transactions.addToBlockchain(receiver2, propertyPrice2, propertyName2);
+
+    const count = await transactions.getTransactionCount();
+
+    assert.equal(count, 2);
   });
 });

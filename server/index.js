@@ -5,7 +5,6 @@ const cors = require("cors");
 const connection = require("./db");
 const userRoutes = require("./routes/users");
 const authRoutes = require("./routes/auth");
-const propertyRoutes = require("./routes/property");
 // database connection
 connection();
 
@@ -16,7 +15,6 @@ app.use(cors());
 // routes
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
-app.use("/api/property", propertyRoutes);
 
 app.get('/', (req, res) => {
     res.send('Server side for the My Real Estate BlockChain is now runinng....');
