@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./styless.module.css";
+import SocialLoginButtons from './SocialLoginButtons'; // Adjust the path if needed
 
 const Signup = () => {
 	const [data, setData] = useState({
@@ -90,6 +91,16 @@ const Signup = () => {
 						<button type="submit" className={styles.green_btn}>
 							Sign Up
 						</button>
+						
+						<SocialLoginButtons
+						    handleGoogleLogin={handleGoogleLogin}
+						    handleFacebookLogin={handleFacebookLogin}
+						    handleGoogleLoginFailure={handleGoogleLoginFailure}
+						  />
+						
+						  <button type="submit" className={styles.green_btn}>
+						    Sign Up
+						  </button>
 					</form>
 				</div>
 			</div>
