@@ -13,8 +13,8 @@ describe("Transactions", function () {
     await transactions.deployed();
 
     const receiver = "0x1234567890123456789012345678901234567890";
-    const propertyPrice = 100000;
-    const propertyName = "Example Property";
+    const propertyPrice = 0.003;
+    const propertyName = "123 Main St";
 
     await transactions.addToBlockchain(receiver, propertyPrice, propertyName);
 
