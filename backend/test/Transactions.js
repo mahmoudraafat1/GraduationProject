@@ -12,7 +12,7 @@ describe("Transactions", function () {
     const transactions = await Transactions.deploy();
     await transactions.deployed();
 
-    const receiver = "0x1234567890123456789012345678901234567890";
+    const receiver = "0x1234567890123456789012345678901234567899";
     const propertyPrice = 0.003;
     const propertyName = "123 Main St";
 
