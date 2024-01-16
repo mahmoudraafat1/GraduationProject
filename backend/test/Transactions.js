@@ -33,7 +33,7 @@ describe("Transactions", function () {
 
     const receiver1 = "0x1234567890123456789012345678901234567890";
     const propertyPrice1 = 0.05;
-    const propertyName1 = "Property 1";
+    const propertyName1 = "456 Main St";
 
     const receiver2 = "0xabcdefabcdefabcdefabcdefabcdefabcdefabcdef";
     const propertyPrice2 = 0.02;
