@@ -1,4 +1,5 @@
 export const propertyList = [
+    
     {
       id: 1,
       image: "../../images/1.png",
