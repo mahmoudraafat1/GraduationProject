@@ -32,11 +32,11 @@ describe("Transactions", function () {
     await transactions.deployed();
 
     const receiver1 = "0x1234567890123456789012345678901234567890";
-    const propertyPrice1 = 100000;
+    const propertyPrice1 = 0.05;
     const propertyName1 = "Property 1";
 
     const receiver2 = "0xabcdefabcdefabcdefabcdefabcdefabcdefabcdef";
-    const propertyPrice2 = 200000;
+    const propertyPrice2 = 0.02;
     const propertyName2 = "Property 2";
 
     await transactions.addToBlockchain(receiver1, propertyPrice1, propertyName1);
