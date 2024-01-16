@@ -37,7 +37,7 @@ describe("Transactions", function () {
 
     const receiver2 = "0xabcdefabcdefabcdefabcdefabcdefabcdefabcdef";
     const propertyPrice2 = 0.02;
-    const propertyName2 = "Property 2";
+    const propertyName2 = "789 Main St";
 
     await transactions.addToBlockchain(receiver1, propertyPrice1, propertyName1);
     await transactions.addToBlockchain(receiver2, propertyPrice2, propertyName2);
