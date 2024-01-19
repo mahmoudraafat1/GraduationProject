@@ -5,7 +5,6 @@ import {First} from './components';
 import {Login,Signup,Main,Error,PageLoader} from './components';
 import { useState, useEffect } from 'react';
 import { Route, Routes} from "react-router-dom";
-//  <Route path="/main" element={<Navigate replace to="/login" />} />      
 function App() {
   const [loading, setLoading] = useState(true);
   const [isDataLoaded, setIsDataLoaded] = useState(false);
