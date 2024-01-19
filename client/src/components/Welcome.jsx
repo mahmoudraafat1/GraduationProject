@@ -1,13 +1,12 @@
 import Image from "../../images/main.png";
 import { AiFillPlayCircle } from "react-icons/ai";
-import { useContext } from "react"; // Import the useContext hook
+import { useContext } from "react";
 import { TransactionContext } from "../context/TransactionContext";
 
 const Welcome = () => {
   const companyCommonStyles =
     "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 
-  // Retrieve the required variables and functions from the context
   const { currentAccount, connectWallet} = useContext(TransactionContext);
 
  
