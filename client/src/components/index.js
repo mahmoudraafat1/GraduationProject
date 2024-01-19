@@ -21,3 +21,4 @@ export { default as PageLoader } from "./PageLoader";
 //export { default as PropertyList } from "./PropertyList";
 //export { default as PropertyForm } from "./PropertyForm";
 //export { default as PropertyNewForm } from "./PropertyNewForm";
+//export { default as CreateProp } from "./CreateProp";
