@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import Errorr from "../../images/error.png";
-
 const Error = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
