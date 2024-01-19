@@ -12,7 +12,7 @@ describe("Transactions", function () {
     const transactions = await Transactions.deploy();
     await transactions.deployed();
 
-    const receiver = "0x1234567890123456789012345678901234567899";
+    const receiver = "0x1234567890123456789012345678901234567890";
     const propertyPrice = 0.003;
     const propertyName = "123 Main St";
 
@@ -31,12 +31,12 @@ describe("Transactions", function () {
     const transactions = await Transactions.deploy();
     await transactions.deployed();
 
-    const receiver1 = "0x1234567890123456789012345678901234567890";
-    const propertyPrice1 = 0.05;
+    const receiver1 = "0x1234567890123456789012345678901234567899";
+    const propertyPrice1 = 0.005;
     const propertyName1 = "456 Main St";
 
     const receiver2 = "0xabcdefabcdefabcdefabcdefabcdefabcdefabcdef";
-    const propertyPrice2 = 0.02;
+    const propertyPrice2 = 0.0075;
     const propertyName2 = "789 Main St";
 
     await transactions.addToBlockchain(receiver1, propertyPrice1, propertyName1);
