@@ -58,13 +58,11 @@ const Chat = () => {
         property.ethPrice <= ethPrice &&
         property.squarefeet >= squareFeet
     );
-
     const randomIndex = Math.floor(Math.random() * filteredProperties.length);
     const recommendedProperty = filteredProperties[randomIndex];
 
     setSelectedProperty(recommendedProperty);
   };
-
   const steps = [
     {
       id: '1',
@@ -137,7 +135,6 @@ const Chat = () => {
     
     },
   ];
-
   return (
     <div>
       <div
