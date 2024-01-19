@@ -1,4 +1,3 @@
-
 import Image from "../../images/6.png";
 
 const AboutUs = () => {
@@ -14,9 +13,7 @@ const AboutUs = () => {
             className="w-full h-auto object-cover rounded-tr-full rounded-bl-ful"
           />
         </div>
-  
-
-
+      
       <div className="w-full md:w-1/2 p-4 md:p-8  bg-black flex items-center justify-center">
         <div className="text-center md:text-left">
           <h2 className="text-3xl md:text-5xl font-bold text-yellow-400 mb-4">
