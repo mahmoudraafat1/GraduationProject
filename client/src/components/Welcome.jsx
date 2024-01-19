@@ -8,9 +8,6 @@ const Welcome = () => {
     "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 
   const { currentAccount, connectWallet} = useContext(TransactionContext);
-
- 
-
   return (
     <div id="welcome" className="w-full min-h-screen p-8 flex items-center gradient-bg-home">
       <div className="max-w-7xl mx-auto md:flex md:flex-row-reverse md:items-center">
