@@ -1,5 +1,5 @@
-<h1 align="center">My Real Estate</h1>
-<p align="center">My Real Estate - Blockchain-powered Real Estate Platform</p>
+<h1 align="center">Land Property</h1>
+<p align="center">Land Property - Blockchain Investment Trading Platform</p>
 <p align="center">
   
 
