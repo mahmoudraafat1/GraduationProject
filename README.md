@@ -26,6 +26,9 @@ The backend infrastructure will be built using the Hardhat framework, and smart 
 
 Phase 2 and 3 - Ownership Establishment using NFTs and Fractional Investment: Building upon the success of Phase 1, the second phase of the project will introduce Non-Fungible Tokens (NFTs) to establish ownership of land properties and facilitate fractional investment. By tokenizing land properties as unique NFT assets, Land Investment will provide individuals with digital certificates of ownership that can be securely transferred and verified on the blockchain. This will enable fractional ownership, facilitate land investment, and open up new opportunities for liquidity and asset diversification.
 
+Develop for Next Generation, Smart & Easy Trading system or Trading Automation system. No Monthly Fees, No Hidden Charges, and No Encryptions. comes for a lifetime at an affordable price. Vinance comes with all the essential features required to automate your Digital Trading business globally. It allows you to trade on digital assets, mainly cryptos. comes with ease, and allows the management of the Trading services. comes with automated connections with 21+ Payment Gateways, it is possible to set manual withdrawal/deposit system, and more are coming. It’s a next-generation Trading solutions automation software that automates users, payments, Trade, billing, management, support services, and other core services. 
+
+Our platform boasts a dynamic and ever-evolving trading system that keeps the excitement alive. Vinance ensures real-time cryptocurrency data, real-time trading, a dynamic & elegant wallet system, easy order & trade management, simple deposit system with a lot of payment gateways including copayments, NOWPayments, PayPal, Stripe & more. Share the excitement with friends and family and watch your rewards multiply! Our Multi-Level Referral System ensures that everyone benefits from spreading the trading. Your convenience is our priority. Vinance user-friendly interface ensures easy navigation, while the responsive and elegant design guarantees a seamless experience across all devices. Safety and security are at the heart of Vinance. Our advanced Two-Factor Authentication System ensures your account remains protected at all times, giving you peace of mind. Connecting to Vinance is a breeze with our Social Login System. Link your favorite social media accounts, and you’re ready to dive into the world of thrilling trading platforms. 
 <hr>
 
 <h1 align="center">🚀 Folder Structure</h1>
@@ -125,12 +128,53 @@ backend --> cd backend --> npm install --force
 server --> cd server --> npm start
 
 <hr>
+<h1 align="center">Base Overview</h1>
+– Crypto Currency Management.
+– Fiat Currency Management.
+– Auto Crypto Currency Data Update System.
+– Market Management.
+– Coin-pair Management.
+– Order Management.
+– Trade Management.
+– Wallet Management.
+– Multi-Level Referral system.
+– User-Friendly, Responsive & Elegant Design.
+– Dynamic Cron Manager.
+– Multi-Language System.
+– Users Management.
+– Dynamic KYC form.
+– Various Payment Gateway.
+– Easy and complete project documentation.
+– Regular updates facilities: premium and quick support.
+
+<hr>
 
 <h1 align="center">🚀 Features</h1>
 
-1) MongoDB for Log in and Sign up
-2) ChatBot using AI to recommend property for the user based on his/her answers
-
+- MongoDB for Log in and Sign up.
+- Social login (with google - facebook - linkedIn - MetaMask wallet).
+- ChatBot using AI to recommend property for the user based on his/her answers.
+- ML price prediction.
+- 100% Secure Admin Dashboard.
+– Automated Deposits Manager.
+– Manual Deposits Manager.
+– Withdrawals Manager.
+– Report Manager.
+– Extension Management.
+– Language Management.
+– Content Management.
+– SEO Manager.
+– Page Builder.
+– Support Ticket Management.
+– System Setting.
+– System Configuration.
+– Email Notification System.
+– SMS Notification System.
+– User Email & SMS verification system.
+– 2FA-security system.
+– Support modern browser and cross-browser compatibility .
+– Dynamic CRON setting manager.
+– System Update Manager.
 <hr>
 
 ## Author
