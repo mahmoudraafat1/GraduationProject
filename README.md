@@ -150,30 +150,30 @@ server --> cd server --> npm start
 <hr>
 
 <h1 align="center">🚀 Features</h1>
-MongoDB for Log in and Sign up.
-Social login (with google - facebook - linkedIn - MetaMask wallet).
-ChatBot using AI to recommend property for the user based on his/her answers.
-ML price prediction.
-100% Secure Admin Dashboard.
-Automated Deposits Manager.
-Manual Deposits Manager.
-Withdrawals Manager.
-Report Manager.
-Extension Management.
-Language Management.
-Content Management.
-SEO Manager.
-Page Builder.
-Support Ticket Management.
-System Setting.
-System Configuration.
-Email Notification System.
-SMS Notification System.
-User Email & SMS verification system.
-2FA-security system.
-Support modern browser and cross-browser compatibility .
-Dynamic CRON setting manager.
-System Update Manager.
+- MongoDB for Log in and Sign up.
+- Social login (with google - facebook - linkedIn - MetaMask wallet).
+- ChatBot using AI to recommend property for the user based on his/her answers.
+- ML price prediction.
+- 100% Secure Admin Dashboard.
+- Automated Deposits Manager.
+- Manual Deposits Manager.
+- Withdrawals Manager.
+- Report Manager.
+- Extension Management.
+- Language Management.
+- Content Management.
+- SEO Manager.
+- Page Builder.
+- Support Ticket Management.
+- System Setting.
+- System Configuration.
+- Email Notification System.
+- SMS Notification System.
+- User Email & SMS verification system.
+- 2FA-security system.
+- Support modern browser and cross-browser compatibility .
+- Dynamic CRON setting manager.
+- System Update Manager.
 
 <hr>
 
