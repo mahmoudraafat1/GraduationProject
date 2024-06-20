@@ -133,8 +133,7 @@ server --> cd server --> npm start
 
 <hr>
 
-## Author(s)
-**Mostafa Hassan**
+## Author
 </br>
 **Mahmoud Raafat**
 <hr>
