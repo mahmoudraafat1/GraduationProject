@@ -175,6 +175,8 @@ server --> cd server --> npm start
 - Dynamic CRON setting manager.
 - System Update Manager.
 
+![Untitled](https://github.com/mahmoudraafat1/GraduationProject/assets/69508027/f31b1aa9-5b15-45cd-b281-ba080e87c75d)
+
 <hr>
 
 ## Author
