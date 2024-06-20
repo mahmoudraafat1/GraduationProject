@@ -151,10 +151,6 @@ server --> cd server --> npm start
 
 <h1 align="center">🚀 Features</h1>
 
-- MongoDB for Log in and Sign up.
-- Social login (with google - facebook - linkedIn - MetaMask wallet).
-- ChatBot using AI to recommend property for the user based on his/her answers.
-- ML price prediction.
 - 100% Secure Admin Dashboard.
 – Automated Deposits Manager.
 – Manual Deposits Manager.
@@ -175,6 +171,10 @@ server --> cd server --> npm start
 – Support modern browser and cross-browser compatibility .
 – Dynamic CRON setting manager.
 – System Update Manager.
+- MongoDB for Log in and Sign up.
+- Social login (with google - facebook - linkedIn - MetaMask wallet).
+- ChatBot using AI to recommend property for the user based on his/her answers.
+- ML price prediction.
 <hr>
 
 ## Author
