@@ -135,7 +135,7 @@ server --> cd server --> npm start
 
 ## Author
 </br>
-**Mahmoud Raafat**
+Mahmoud Raafat
 <hr>
 <h1 align="center">Languages and Tools that used in this project</h1>
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
