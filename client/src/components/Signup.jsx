@@ -2,6 +2,8 @@ import { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./styless.module.css";
+import SocialLoginButtons from './SocialLoginButtons'; // Adjust the path if needed
+
 
 const Signup = () => {
 	const [data, setData] = useState({
